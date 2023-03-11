@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using js beginner</title>
+
+    <style>
+        .container{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+        .row h2{
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>Nothing to have</h2>
+            <h2>Nothing to have</h2>
+            <h2>Nothing to have</h2>
+            <div id="content"></div>
+        </div>
+    </div>
+
+    <script>
+       var a = 'Hellow ';
+       var b = 'World';
+       console.log(a+b);
+       var c = `${a} Harry vhai`;
+       console.log(c);
+       console.log(`${a} Sonam vhai. Do you like this ${b}`);
+       document.getElementById('content').innerHTML = '<h2> This content is from javaScript </h2>'
+    </script>
+</body>
+</html>

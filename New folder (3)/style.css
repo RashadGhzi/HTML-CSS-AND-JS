@@ -1,0 +1,332 @@
+/* .navbar-custom {
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
+}
+
+.navbar-toggler .menu-icon {
+    width: 26px;
+    height: 20px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar-toggler .menu-icon__line {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.navbar-toggler .menu-icon__line:nth-child(1) {
+    top: 0px;
+}
+
+.navbar-toggler .menu-icon__line:nth-child(2),
+.navbar-toggler .menu-icon__line:nth-child(3) {
+    top: 9px;
+}
+
+.navbar-toggler .menu-icon__line:nth-child(4) {
+    top: 18px;
+}
+
+.navbar-toggler.collapsed .menu-icon__line:nth-child(1) {
+    top: 9px;
+    width: 0%;
+    left: 50%;
+}
+
+.navbar-toggler.collapsed .menu-icon__line:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler.collapsed .menu-icon__line:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.dropdown-menu {
+    background-color: #4A00E0;
+}
+
+.dropdown-menu a {
+    color: red
+}*/
+
+/* first card css */
+/*
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    background-size: cover;
+}
+
+
+.card-content {
+    padding: 20px;
+    background-color: #f2f2f2;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+} */
+
+
+/* second card css chatgpt */
+/* .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.card-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: #005F6B;
+} */
+
+
+/* third card css chatgpt */
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: #005F6B;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.card-back h2 {
+    margin: 0;
+    animation: slide-up 0.5s;
+}
+
+.card-back p {
+    margin: 20px 0;
+    animation: slide-up 0.5s 0.1s;
+}
+
+.card-back .btn {
+    animation: slide-up 0.5s 0.2s;
+}
+
+
+/* forth card css chatgpt */
+/* .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-color: #C00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.card-back {
+    background-color: #FFF;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-front {
+    transform: scale(1.2);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+    filter: hue-rotate(90deg);
+}
+
+.card:hover .card-back {
+    transform: scale(1.2) rotateY(180deg);
+    box-shadow: 0px -20px 30px rgba(0, 0, 0, 0.5);
+    filter: hue-rotate(-90deg);
+}
+
+.card:hover .card-back p {
+    transform: translateY(50px);
+    opacity: 1;
+}
+
+.card:hover .card-back h2 {
+    transform: translateY(0px);
+    opacity: 1;
+} */

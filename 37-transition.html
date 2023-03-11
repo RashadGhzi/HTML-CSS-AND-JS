@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container {
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 150px;
+            background-color: aqua;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .card:hover {
+            background-color: deeppink;
+            font-size: 30px;
+            height: 500px;
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgb(61, 58, 58);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            Everything is not good
+        </div>
+    </div>
+</body>
+
+</html>

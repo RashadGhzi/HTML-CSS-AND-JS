@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope if else and switch</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem dolore id repudiandae rem cupiditate, sunt, labore atque fugit, natus exercitationem nesciunt asperiores! Id numquam cumque nisi repellendus saepe fugiat laboriosam aut ducimus vero. Quibusdam necessitatibus eum possimus nam amet.</p>
+    </div>
+
+
+    <script>
+        // var a = 10;  // This can be override 
+        // let b = 20; // This is connot be override only in block can be override
+        // const c = 50; // This is constant. It will never change.
+        // var a = 30; // it will not give error
+        // let b = 40; // it will give error 
+        // var c = 80; //It will give error
+        // console.log(a);
+        // console.log(b);
+        // {
+        //     let b = 40;
+        //     console.log(b);  // This is right way
+        // }
+
+        // let year = 60;
+
+        // if (year >= 20 & year <= 50){
+        //     console.log("You can go anywhere");
+        // }
+
+        // else if (year>50 & year<100){
+        //     console.log("You should become to go right path");
+        // }
+        // else{
+        //     console.log("You cannot go anywhere.");
+        // }
+
+
+
+        const weekend = "thirsday"
+
+        switch (weekend){
+            case ('saturday'):
+                console.log('This is saturday');
+                break;
+            
+            case ('sunday'):
+                console.log('This is sunday');
+                break;
+
+            case ('monday'): 
+                console.log('This is monday');
+                break;
+
+            case ('tuesday'): 
+                console.log('This is tuesday');
+                break;
+            
+            case ('wednesday'):
+                console.log('This is wednesday');
+                break;
+            
+            case ('thirsday'): 
+                console.log('This is thirsday');
+                break;
+            
+            case ('friday'): 
+                console.log('This is friday');
+                break;
+            
+            default: 
+                console.log("This is nothing");
+                break;
+        }
+    </script>
+</body>
+</html>

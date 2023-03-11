@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval and Set time out</title>
+</head>
+<body>
+    <h1>We have very important message for you, wait for a moment.</h1>
+    <h1 id="date"></h1>
+    <h1 id="time"></h1>
+    <h2>or click button to stop this</h2>
+    <button id="btn" onclick="greetingStop()">stop</button>
+
+    <script>
+        // function item(name){
+        //     console.log("His name is "+name);
+        // }
+        // setTime = setTimeout(item, 10000, "harry");
+        // console.log(setTime);
+
+        date = setInterval(dateitem, 1000);
+        function dateitem(){
+            dateTime = new Date();
+            document.querySelector("#date").innerHTML = `date is ${dateTime}`;
+        }
+
+
+        timeInterval = setInterval(greeting, 2000); // it call infinite
+
+        function greeting(){
+            document.getElementById("time").innerHTML += `Happy Birthday <br>`;
+            console.log(`Happy Birthday`);
+        }
+
+        function greetingStop(){
+            clearInterval(timeInterval)
+        }
+
+        item = setTimeout(welcome, 3000);
+        function welcome(){
+            console.log("hello");
+        }
+
+
+        // changing global variable
+        // var count = 1;
+        // function item (){
+        //     count = 10;
+
+        // }
+        // item();
+        // console.log(count);
+    </script>
+</body>
+</html>

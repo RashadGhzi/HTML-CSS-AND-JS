@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+
+<body>
+    <h1>We are working with loop</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quos ex veritatis! Voluptates iste ut quam
+        pariatur consequatur molestiae, quo quos rem molestias harum cumque illo non similique alias nemo sequi error
+        rerum hic id ullam possimus ad? Consequuntur repellendus incidunt, quasi voluptatum esse reprehenderit nisi! Quo
+        mollitia temporibus magni eum, tempora animi quibusdam dignissimos voluptatem sed. Quod molestiae animi quis,
+        velit iste asperiores harum magni rerum soluta error quisquam, dolorem, consequuntur est facilis perspiciatis
+        distinctio explicabo! Qui neque esse alias atque? Enim inventore quaerat unde! Omnis ipsum similique doloribus,
+        eos eum iste aliquid reprehenderit aliquam culpa, repudiandae commodi error!</p>
+
+
+    <script>
+        // console.log('Working with loop');
+        // for (i = 0; i < 3; i++) {
+        //     console.log(i);
+        // }
+
+        item = ["harry", "geeky shows", "django", "Python"]
+
+
+        // for (i = 0; i < item.length; i++) {
+        //     console.log(item[i]);
+        // }
+
+        // item.forEach(element => {
+        //     console.log(element);
+        // });
+
+        // item.forEach(function fun(element) {
+        //     console.log(element);
+        // })
+
+        for (elelment of item) {
+            console.log(elelment);
+        }
+
+        for (let [index, element] of Object.entries(item)) {
+            console.log(`${index} is ${element}`);
+        }
+
+        let dict_array = {
+            name: "Harry",
+            salary: 2000,
+            role: "Programming"
+        }
+        for (key in dict_array) {
+            console.log(key);
+            console.log(`${key} is ${dict_array[key]}`);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

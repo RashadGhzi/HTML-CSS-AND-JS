@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Nothing to say</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero sapiente, earum non voluptatibus ab, eum dolorum voluptatum recusandae doloremque accusantium modi, autem facere animi sit nobis totam impedit. Aliquam magnam iure optio voluptatibus beatae! At doloremque praesentium aperiam accusantium ut minus esse, voluptas error quidem doloribus dolores iure obcaecati modi!</p>
+    </div>
+
+
+    <script>
+        console.log('Hellow World');
+        var str = 'This is string';
+        console.log(str);
+        console.log(str.slice(1,6));
+        console.log(str.slice(-2));
+        console.log(str.substring(1,6)); 
+        console.log(str.substr(1,5));   // 5 is length here
+        var strSplit = str.split(" "); // it will split white space and add items on list
+        console.log(strSplit);
+        console.log(strSplit[1]);
+
+
+        var replaceData = str.replace('string', 'Harry vhai'); // replate the string word to harry vhai
+        console.log(replaceData);
+        console.log(str.toUpperCase()); // conver string to uppercase
+        console.log(str.toLowerCase()); // convert string to lower case
+    </script>
+</body>
+</html>

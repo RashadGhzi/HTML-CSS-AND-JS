@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector CSS</title>
+    <style>
+        .attrib3 {
+            border: 2px solid green;
+        }
+
+        #bg_red {
+            color: blue;
+        }
+
+        .attrib2 {
+            background-color: yellow;
+        }
+
+        .attrib1 {
+            color: purple;
+        }
+
+        #bg_green {
+            background-color: springgreen;
+        }
+
+        footer,
+        span {
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selector</h3>
+    <p id="bg_red">This is a simple paragraph to demonstrate css selector</p>
+    <p id="bg_blue" class="attrib1">This is another simple paragraph to demonstrate css selector</p>
+    <p class="attrib3">This is no.2 simple paragraph to demonstrate css selector</p>
+    <p id="bg_red" class="attrib2 attrib3">This is no.3 simple paragraph to demonstrate css selector</p>
+    <p id="bg_red">This is no.4 simple paragraph to demonstrate css selector</p>
+    <p id="bg_green" class="attrib1">This is no.5 simple paragraph to demonstrate css selector</p>
+    <p class="attrib1 attrib2 attrib3">This is no.6 simple paragraph to demonstrate css selector</p>
+    <footer>This is footer</footer>
+    <span>This is span</span>
+</body>
+
+</html>

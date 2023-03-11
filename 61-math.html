@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <h2>Everything is not fine</h2>
+    <h3 id="demo"></h3>
+
+
+    <script>
+        // let m = Math;
+        // let m = Math.round(3.55)
+        // let m = Math.round(3.49)
+        // let m = Math.ceil(5.4) // Returns positive value of decimal
+        // let m = Math.floor(5.6) // Returns negetive value of decimal
+        // let m = Math.trunc(4.55);  // Returns the integer part
+        // let m = Math.pow(3,2);
+        // let m = Math.PI
+        // let m = Math.sqrt(25)
+
+        // let m = Math.min(0, 150, 30, 20, -8, -200);
+        // let m = Math.max(0, 150, 30, 20, -8, -200);
+
+        // let m = Math.random() // default is 0 to 1
+        // random number formula is a + Math.random()*(b-a)
+        let a = 5;
+        let b = 10;
+        // let m = Math.random()*10;
+        // let m = a + Math.random()*(b-a);
+        let m = Math.floor(Math.random()*(b-a)) + 1;
+
+        document.getElementById('demo').innerHTML = m;
+        console.log(m)
+    </script>
+</body>
+</html>

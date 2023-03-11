@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>after and before</title>
+    <style>
+        .container {
+            margin: 30px auto;
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .container::before {
+            content: 'This is container before';
+            margin: 30px auto;
+            height: 200px;
+            width: 400px;
+            color: rgb(255, 255, 255);
+            background-color: red;
+            position: absolute;
+            z-index: -1;
+            left: 40px;
+        }
+
+        .container::after {
+            content: 'This is container before';
+            margin: 30px auto;
+            height: 200px;
+            width: 400px;
+            color: rgb(0, 0, 0);
+            background-color: blue;
+            position: absolute;
+            z-index: 2;
+            right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non corrupti aperiam porro veniam repudiandae dicta
+        quia, quisquam in culpa deserunt, eos possimus laboriosam earum eaque, tempore ex aut quibusdam inventore
+        asperiores quis quaerat quasi! Facere nam labore consequuntur cumque, corrupti doloremque laborum qui error
+        aliquam debitis fugiat atque, ut dignissimos?
+    </div>
+</body>
+
+</html>

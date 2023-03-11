@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+
+.parallax_image{
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100vw;
+    background-attachment: fixed;
+}
+
+.box{
+    height: 100px;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.parallax{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 1px;
+}
+.bg-image1{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('1.jpg');
+}
+.bg-image2{
+    background-image: 
+    linear-gradient(rgba(0,220,0,0.1),rgba(0,220,0,0.1)),
+    url('2.jpg');
+            
+}
+.bg-image3{
+    background-image: 
+    url('3.jpg');
+}
+.bg-image4{
+    
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url('1.jpg');
+}

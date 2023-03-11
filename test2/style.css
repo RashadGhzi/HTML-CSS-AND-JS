@@ -1,0 +1,56 @@
+
+.wrapper-outer{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper{
+    height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
+}
+
+
+.parallax_section{
+    min-height: 50vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    position: relative;
+    
+}
+.parallax_bg{
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+
+.parallax_section .background {
+    transform: translateZ(-6px) scale(2) rotate(-5deg);
+    opacity: 0.6;
+  }
+
+.parallax .foreground {
+transform: translateZ(-5px) scale(1.5) rotate(2deg);
+opacity: 0.8;
+width: 50%;
+}
+
+.parallax_section h2{
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+}

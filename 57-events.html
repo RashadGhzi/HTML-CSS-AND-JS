@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to events</title>
+    <style>
+        #btn {
+            padding: 8px 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: darkcyan;
+            color: white;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with Events</h1>
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quis provident ab aliquam asperiores
+        exercitationem
+        possimus dolorem sunt, suscipit, consequatur, aliquid reiciendis quos vitae ut officia. Reiciendis atque
+        voluptatem qui optio error aut sed quaerat ex, id enim cupiditate, ipsam, officiis facilis placeat velit?
+        Mollitia dignissimos minima, hic reprehenderit illum debitis autem magni ratione. Natus minus tempore nihil
+        ratione soluta dolor neque ea aliquam explicabo nisi voluptatum corrupti, dolore consectetur, quod facere
+        delectus eveniet, eum libero ab deserunt? Odio quos ex perspiciatis soluta dolores deleniti, voluptatum
+        possimus, praesentium esse accusamus nesciunt cum ducimus, vitae vel? Omnis placeat molestiae quaerat quidem.
+    </p>
+    <button onclick="hide()" id="btn">hide text</button>
+
+
+
+    <script>
+        let para = document.getElementById("para");
+        let h1 = document.querySelector("h1");
+        function hide() {
+            
+            if (para.style.display != "none") {
+                para.style.display = "none";
+                h1.style.color = "red";
+                h1.innerHTML = "<h1>Events worked</h1>";
+            }
+            else {
+                para.style.display = "block";
+                h1.style.color = "black";
+                h1.innerHTML = "<h1>Working with Events</h1>";
+            }
+        }
+
+        para.addEventListener("mouseover", function(){
+            console.log("mouse cursor on para");
+        });
+        document.getElementById("para").addEventListener("mouseout", function(){
+            console.log("mouse cursor out of para");
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* style navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* navigation bar logo style */
+#logo {
+    background-color: #607d8b;
+    height: 65px;
+    width: 65px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+/* navigation bar image style */
+#logo img {
+    width: 45px;
+}
+
+/* navigation bar styling */
+#navbar {
+    position: relative;
+}
+
+#navbar::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+}
+
+
+/* navigation bar list style  */
+#navbar ul {
+    display: flex;
+    list-style: none;
+
+
+}
+
+/* navbar list style */
+#navbar .item {
+    margin: 0px 20px;
+    font-family: cursive;
+}
+
+/* navbar list a tag link style */
+nav li>a {
+    text-decoration: none;
+    color: white;
+    /* transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out; */
+}
+
+/* navbar link hover  */
+nav li>a:hover {
+    border-bottom: 1px solid rgb(0, 225, 255);
+}
+
+
+
+/* this media is for desktop size or more then (761 pixels) */
+
+/* styling the body content  */
+#body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    color: rgb(255, 255, 255);
+}
+
+#body-content::before {
+    content: '';
+    background: url('../images/bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: -3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#body-content::after {
+    content: '';
+    background-color: #333;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+
+#body-content>h2 {
+    margin-top: 230px;
+    font-size: 3rem;
+    color: #5da509;
+    font-family: 'Bree Serif', serif;
+}
+
+#body-content div {
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: cursive;
+}
+
+
+
+#body-content>.btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 2px 20px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-family: 'Bree Serif';
+    border-radius: 5px;
+}
+
+#body-content>.btn:hover {
+    border-bottom: none;
+    border-left: none;
+    transform: scale(1.2);
+}
+
+/* section second styling */
+#second-section {
+    margin-top: 22rem;
+    align-items: center;
+}
+
+#second-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bree Serif';
+}
+
+/* second section cards styling */
+.second-section-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 450px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid green;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.second-section-cards .card img {
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+
+.second-section-cards .card h2 {
+    font-size: 2rem;
+    color: green;
+    font-family: cursive;
+}
+
+.second-section-cards .card p {
+    font-family: 'Bree Serif';
+    padding: 0px 50px;
+    text-align: justify;
+
+}

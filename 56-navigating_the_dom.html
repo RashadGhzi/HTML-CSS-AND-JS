@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <nav id="navbar">
+            <div class="logo">This is Logo</div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>More about us</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, blanditiis. Saepe illum pariatur
+                molestiae excepturi enim incidunt aspernatur facilis totam animi in expedita vitae, numquam impedit sed
+                aut qui officiis iure! Sed facilis quis assumenda, commodi eos est itaque.</p>
+        </div>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, blanditiis. Saepe illum pariatur
+            molestiae excepturi enim incidunt aspernatur facilis totam animi in expedita vitae, numquam impedit sed
+            aut qui officiis iure! Sed facilis quis assumenda, commodi eos est itaque.</p>
+    </div>
+
+
+    <script>
+        // let container = document.getElementsByClassName("container");
+        // console.log(container);
+        // let main = document.getElementById("main");
+        // console.log(main);
+        // console.log(main.innerHTML)  // It will give html content with string
+        // let a = document.querySelector(".container");
+        // let b = document.querySelectorAll(".container");
+        // console.log(b);
+        // console.log(b[1]);
+        // console.log(b[0]);
+
+
+        // let navId = document.querySelector("#main");
+        // let navId = document.querySelector("#main>#navbar");
+        // let navId = document.querySelector("#main #navbar");
+        // let navId = document.querySelector("#main ul li");
+        let navId = document.querySelector("#main>#navbar>ul>li");
+        navId.style.display = "block";
+        console.log(navId);
+
+
+    </script>
+</body>
+
+</html>

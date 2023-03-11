@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time Java Script</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is date and time funtion</h1>
+        <div id="time"></div>
+        <button type="button" onclick="interval_stop()"> stop time interval</button>
+    </div>
+
+
+
+    <script>
+        let time_1 = new Date();
+        console.log(time_1);
+        let time_2 = new Date("2020-02-20");
+        console.log(time_2);
+        // let time_3 = new Date(year, month, day, hour, minute, second, milisecond)
+        let time_3 = new Date(2029, 09, 29, 05, 40, 5);
+        console.log(time_3);
+        let time_4 = time_1.getFullYear();
+        console.log(time_4);
+        let time_5 = time_1.getHours();
+        console.log(time_5);
+        let time_6 = time_1.setFullYear(2029);
+        let time_7 = time_1.setHours(20);
+        let time_8 = time_1.setMonth(2);
+        console.log(time_6);
+
+
+        date = setInterval(watch, 1000);
+        function watch(){
+            let time_item = new Date();
+            document.querySelector("#time").innerHTML = `${time_item}`;
+        }
+        console.log(date);
+
+        let interval_stop=()=>clearInterval(date); //This is short cut function in js
+    </script>
+</body>
+</html>

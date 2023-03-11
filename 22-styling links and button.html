@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Liks and Button</title>
+    <style>
+        .container {
+            background-color: aliceblue;
+            padding: 15px;
+            margin: 15px auto;
+            width: 666px;
+            border: 2px solid rgb(0, 223, 223);
+        }
+
+        h3 {
+            font-family: cursive;
+            font-weight: bold;
+            color: black;
+        }
+
+        #item {
+            font-family: cursive;
+        }
+
+        .btn {
+            border: none;
+            padding: 5px;
+            background-color: rgb(184, 255, 255);
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px 2px;
+        }
+
+        .btn:hover {
+            color: grey;
+            background-color: rgb(202, 251, 251);
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(255, 83, 83);
+        }
+
+        /* .btn:active {
+            background-color: purple;
+        } */
+        /* a:visited {
+            background-color: aqua;
+        } */
+
+        #btnId {
+            border: 2px solid rgb(0, 223, 223);
+            padding: 5px 15px;
+            background-color: aliceblue;
+        }
+
+        #btnId:hover {
+            color: white;
+            background-color: rgb(0, 223, 223);
+            transition-duration: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Creating Link and Button</h3>
+        <p id="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, sequi. Quam ipsa unde deleniti quaerat
+            doloribus dicta aspernatur quae dolores expedita iure explicabo autem, inventore sequi veniam qui vitae
+            facilis minima. Rem, minima odio!
+        </p>
+        <a href="https://google.com" target="_blank">click here</a>&nbsp;&nbsp;&nbsp;
+        <button class="btn" type="button">contact us</button>&nbsp;&nbsp;&nbsp;
+        <button id="btnId">Log in</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with json</title>
+</head>
+<body>
+    <h2>Working with JSON</h2>
+    <h3 id="demo"></h3>
+    <h3 id="demo_1"></h3>
+
+
+
+    <script>
+        let obj = {
+            name:"harry",
+            channel:"Code With Harry",
+            salary:1000000,
+        }
+
+        let jsong_string = JSON.stringify(obj);   // converted an object to a valid json string
+        document.getElementById('demo').innerHTML = jsong_string;
+        console.log(jsong_string);
+         
+        let json_obj = JSON.parse(jsong_string); // convert valid json string to a json object
+        document.getElementById("demo_1").innerHTML = json_obj;
+        console.log(json_obj);
+    </script>
+</body>
+</html>

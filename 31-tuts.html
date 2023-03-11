@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* div p {
+        color: aqua;
+        padding: 8px;
+        margin-top: 5px;
+        background-color: black;
+    } */
+
+    div>p {
+        color: rgb(255, 0, 208);
+        padding: 8px;
+        margin-top: 5px;
+        background-color: rgb(0, 52, 52);
+    }
+
+    div+p {
+        color: rgb(33, 0, 27);
+        padding: 8px;
+        margin-top: 5px;
+        background-color: rgb(255, 234, 0);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <p class="p-1">
+            Nothing is here
+        </p>
+        <div>
+            <ul>
+                <li>
+                    <p>This after div, ul and li </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>This is second sibling of body </p>
+</body>
+
+</html>
